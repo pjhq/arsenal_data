@@ -1,9 +1,9 @@
-import { readFileSync } from 'fs';
+import { readFileSync } from "fs";
 
 function extractClassNames(filePath: string): string[] {
   try {
     // Read the file
-    const content = readFileSync(filePath, 'utf8');
+    const content = readFileSync(filePath, "utf8");
 
     // All main class names to extract
     const classNames: string[] = [];
@@ -21,13 +21,15 @@ function extractClassNames(filePath: string): string[] {
       const className = match[1];
 
       // Skip base classes and config sections
-      if (className === "ItemCore" ||
-          className === "InventoryItem_Base_F" ||
-          className === "HeadgearItem" ||
-          className === "CfgWeapons" ||
-          className === "CfgPatches" ||
-          className === "ItemInfo" ||
-          className === "XtdGearInfo") {
+      if (
+        className === "ItemCore" ||
+        className === "InventoryItem_Base_F" ||
+        className === "HeadgearItem" ||
+        className === "CfgWeapons" ||
+        className === "CfgPatches" ||
+        className === "ItemInfo" ||
+        className === "XtdGearInfo"
+      ) {
         continue;
       }
 
@@ -45,7 +47,7 @@ function extractClassNames(filePath: string): string[] {
 
     return classNames;
   } catch (error) {
-    console.error('Error processing config file:', error);
+    console.error("Error processing config file:", error);
     return [];
   }
 }
@@ -54,7 +56,7 @@ function extractClassNames(filePath: string): string[] {
 if (import.meta.main) {
   const args = Bun.argv.slice(2);
   if (args.length === 0) {
-    console.error('Please provide a path to config.cpp');
+    console.error("Please provide a path to config.cpp");
     process.exit(1);
   }
 
