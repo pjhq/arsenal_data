@@ -1,6 +1,16 @@
 {
-    "editor.formatOnSave": true,
-    "cSpell.words": [
-        "loadouts"
-    ]
+  "typescript.experimental.useTsgo": true,
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "oxc.enable": true,
+  "oxc.typeAware": true,
+  "oxc.trace.server": "verbose",
+  "oxc.path.oxfmt": "node_modules/.bin/oxfmt.exe",
+  "oxc.path.oxlint": "node_modules/.bin/oxlint.exe",
+  "oxc.path.tsgolint": "node_modules/.bin/tsgolint.exe",
+  "cSpell.enabledFileTypes": {
+    "json": false
+  },
+  "cSpell.words": [
+    "loadouts"
+  ]
 }
