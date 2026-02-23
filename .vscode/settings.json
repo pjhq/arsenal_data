@@ -7,6 +7,12 @@
   "oxc.path.oxfmt": "node_modules/.bin/oxfmt.exe",
   "oxc.path.oxlint": "node_modules/.bin/oxlint.exe",
   "oxc.path.tsgolint": "node_modules/.bin/tsgolint.exe",
+  "[json]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
   "cSpell.enabledFileTypes": {
     "json": false
   },
