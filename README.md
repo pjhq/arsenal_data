@@ -5,6 +5,7 @@ A utility for managing and generating ACE3 Arsenal configuration files for Arma 
 ## Description
 
 This tool helps with:
+
 - Combining multiple JSON item lists into a single arsenal configuration
 - Generating proper SQF format initialization scripts
 - Removing duplicates and validating arsenal contents
@@ -27,10 +28,12 @@ bun run arsenal --folder path/to/json/folder
 ```
 
 Options:
+
 - `--folder`, `-f`: (Required) Path to folder containing JSON files
 - `--no-check`: Skip duplicate checking
 
 Output files will be created in the `output` directory:
+
 - `init_arsenal_[foldername].sqf`: For direct initialization
 - `arsenal_[foldername].sqf`: For execution with parameters
 

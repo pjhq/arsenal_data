@@ -1,22 +1,10 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": [
-    "eslint",
-    "typescript",
-    "unicorn",
-    "oxc",
-    "import",
-    "jsdoc",
-    "node",
-    "promise"
-  ],
+  "plugins": ["eslint", "typescript", "unicorn", "oxc", "import", "jsdoc", "node", "promise"],
   "categories": {
     "perf": "error"
   },
-  "ignorePatterns": [
-    "node_modules",
-    "**/*.cpp"
-  ],
+  "ignorePatterns": ["node_modules", "**/*.cpp"],
   "rules": {
     "eslint/no-await-in-loop": "allow"
   }

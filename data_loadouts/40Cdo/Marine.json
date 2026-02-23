@@ -1,140 +1,40 @@
 [
   [
-    [
-      "SCM_L403A1_CTR_Tan",
-      "",
-      "UK3CB_BAF_LLM_Flashlight_Tan",
-      "SCM_Eleanor",
-      [
-        "UK3CB_BAF_556_30Rnd",
-        30
-      ],
-      [],
-      "rhsusf_acc_rvg_de"
-    ],
+    ["SCM_L403A1_CTR_Tan", "", "UK3CB_BAF_LLM_Flashlight_Tan", "SCM_Eleanor", ["UK3CB_BAF_556_30Rnd", 30], [], "rhsusf_acc_rvg_de"],
     [],
-    [
-      "UK3CB_BAF_L131A1",
-      "",
-      "",
-      "",
-      [
-        "UK3CB_BAF_9_17Rnd",
-        17
-      ],
-      [],
-      ""
-    ],
+    ["UK3CB_BAF_L131A1", "", "", "", ["UK3CB_BAF_9_17Rnd", 17], [], ""],
     [
       "SCM_G4_T_uniform",
       [
-        [
-          "ACE_splint",
-          5
-        ],
-        [
-          "ACE_MapTools",
-          1
-        ],
-        [
-          "ACE_Flashlight_XL50",
-          1
-        ],
-        [
-          "ItemcTabHCam",
-          1
-        ],
-        [
-          "ACE_IR_Strobe_Item",
-          1
-        ],
-        [
-          "kat_guedel",
-          3
-        ],
-        [
-          "ACE_elasticBandage",
-          10
-        ],
-        [
-          "ACE_tourniquet",
-          4
-        ],
-        [
-          "ACE_packingBandage",
-          10
-        ],
-        [
-          "kat_chestSeal",
-          2
-        ],
-        [
-          "kat_Painkiller",
-          1,
-          4
-        ]
+        ["ACE_splint", 5],
+        ["ACE_MapTools", 1],
+        ["ACE_Flashlight_XL50", 1],
+        ["ItemcTabHCam", 1],
+        ["ACE_IR_Strobe_Item", 1],
+        ["kat_guedel", 3],
+        ["ACE_elasticBandage", 10],
+        ["ACE_tourniquet", 4],
+        ["ACE_packingBandage", 10],
+        ["kat_chestSeal", 2],
+        ["kat_Painkiller", 1, 4]
       ]
     ],
     [
       "SCM_Virtus_Assaulter_1_Belt",
       [
-        [
-          "ACE_M84",
-          1,
-          1
-        ],
-        [
-          "Scotts_EMAG_Magpul_M855A1_Tracer",
-          10,
-          30
-        ],
-        [
-          "UK3CB_BAF_SmokeShell",
-          2,
-          1
-        ],
-        [
-          "HandGrenade",
-          2,
-          1
-        ],
-        [
-          "UK3CB_BAF_SmokeShellBlue",
-          1,
-          1
-        ],
-        [
-          "UK3CB_BAF_SmokeShellRed",
-          1,
-          1
-        ]
+        ["ACE_M84", 1, 1],
+        ["Scotts_EMAG_Magpul_M855A1_Tracer", 10, 30],
+        ["UK3CB_BAF_SmokeShell", 2, 1],
+        ["HandGrenade", 2, 1],
+        ["UK3CB_BAF_SmokeShellBlue", 1, 1],
+        ["UK3CB_BAF_SmokeShellRed", 1, 1]
       ]
     ],
     [],
     "SCM_Fast_V2_C1BP2H3RL2PB1",
     "",
-    [
-      "ACE_Vector",
-      "",
-      "",
-      "",
-      [],
-      [],
-      ""
-    ],
-    [
-      "ItemMap",
-      "ItemAndroid",
-      "TFAR_anprc152",
-      "ItemCompass",
-      "KAT_STS",
-      "SCM_PVS31_W_WP"
-    ]
+    ["ACE_Vector", "", "", "", [], [], ""],
+    ["ItemMap", "ItemAndroid", "TFAR_anprc152", "ItemCompass", "KAT_STS", "SCM_PVS31_W_WP"]
   ],
-  [
-    [
-      "aceax_textureOptions",
-      []
-    ]
-  ]
+  [["aceax_textureOptions", []]]
 ]
