@@ -18,12 +18,12 @@
   "TFAR_anprc154",
   "TFAR_microdagr",
   "ToolKit",
-  "UK3CB_BAF_HMNVS",
-  "UK3CB_BAF_Soflam_Laserdesignator",
   "tsp_breach_block_mag",
   "tsp_breach_linear_mag",
   "tsp_breach_package_mag",
   "tsp_breach_popper_mag",
   "tsp_breach_silhouette_mag",
-  "tsp_breach_stick_mag"
+  "tsp_breach_stick_mag",
+  "UK3CB_BAF_HMNVS",
+  "UK3CB_BAF_Soflam_Laserdesignator"
 ]
