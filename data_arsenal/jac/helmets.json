@@ -1,13 +1,6 @@
 [
   "H_CrewHelmetHeli_B",
   "H_PilotHelmetHeli_B",
-  "SCM_Fast_CU_ENGLISH",
-  "SCM_Fast_CU_NOVAE",
-  "SCM_Fast_CU_TOBIAS",
-  "UK3CB_BAF_H_BERET_AAC",
-  "UK3CB_BAF_H_BERET_AAC_OVER",
-  "UK3CB_BAF_H_BERET_AAC_PRR",
-  "UK3CB_BAF_H_PilotHelmetHeli_A",
   "rhsusf_hgu56p",
   "rhsusf_hgu56p_black",
   "rhsusf_hgu56p_green",
@@ -18,5 +11,12 @@
   "rhsusf_hgu56p_visor_black",
   "rhsusf_hgu56p_visor_green",
   "rhsusf_hgu56p_visor_mask",
-  "rhsusf_hgu56p_visor_mask_green"
+  "rhsusf_hgu56p_visor_mask_green",
+  "SCM_Fast_CU_ENGLISH",
+  "SCM_Fast_CU_NOVAE",
+  "SCM_Fast_CU_TOBIAS",
+  "UK3CB_BAF_H_BERET_AAC",
+  "UK3CB_BAF_H_BERET_AAC_OVER",
+  "UK3CB_BAF_H_BERET_AAC_PRR",
+  "UK3CB_BAF_H_PilotHelmetHeli_A"
 ]
