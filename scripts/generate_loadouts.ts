@@ -1,5 +1,5 @@
 import { mkdir, readdir, stat } from "node:fs/promises";
-import * as path from "path";
+import * as path from "node:path";
 
 async function getAllUnitLoadoutFiles(baseDir: string): Promise<{ unit: string; loadout: string; file: string }[]> {
   const result: { unit: string; loadout: string; file: string }[] = [];
@@ -18,8 +18,9 @@ async function getAllUnitLoadoutFiles(baseDir: string): Promise<{ unit: string; 
   return result;
 }
 
-const baseDir = "data_loadouts";
-const outputFile = path.join("output", "loadouts.sqf");
+const repoRoot = path.resolve(import.meta.dir, "..");
+const baseDir = path.join(repoRoot, "data_loadouts");
+const outputFile = path.join(repoRoot, "output", "loadouts.sqf");
 const currentDate = new Date().toISOString().split("T")[0];
 const outputLines: string[] = [];
 outputLines.push(`"Last Updated: ${currentDate}";`);

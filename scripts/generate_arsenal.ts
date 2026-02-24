@@ -2,6 +2,12 @@ import { mkdir, readdir, stat } from "node:fs/promises";
 import * as path from "node:path";
 import { parseArgs } from "node:util";
 
+const repoRoot = path.resolve(import.meta.dir, "..");
+
+function formatError(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
+
 async function loadAndCombineData(dataFolder: string): Promise<string[]> {
   const combinedData: string[] = [];
 
@@ -88,7 +94,7 @@ async function _compareWithFile(data: string[], compareFilePath: string): Promis
 }
 
 async function writeToFile(data: string[], prefix: string): Promise<void> {
-  const distFolder = "output";
+  const distFolder = path.join(repoRoot, "output");
   const currentDate = new Date();
   const formattedDate = currentDate.toISOString().split("T")[0];
 
@@ -98,7 +104,7 @@ async function writeToFile(data: string[], prefix: string): Promise<void> {
   try {
     await mkdir(distFolder, { recursive: true });
   } catch (error) {
-    console.error(`Error creating ${distFolder} folder: ${error}`);
+    console.error(`Error creating ${distFolder} folder: ${formatError(error)}`);
     process.exit(1);
   }
 
@@ -135,7 +141,7 @@ params ["_Arsenal"];
     console.log(`Data written to file: ${sqfFileExec}`);
     console.log("\n");
   } catch (error) {
-    console.error(`Error writing to file: ${error}`);
+    console.error(`Error writing to file: ${formatError(error)}`);
     process.exit(1);
   }
 }
@@ -178,12 +184,13 @@ const { values } = parseArgs({
 });
 
 const dataPath = "data_arsenal";
+const resolvedDataPath = path.join(repoRoot, dataPath);
 
 if (values.all) {
   try {
-    const folders = await readdir(dataPath);
+    const folders = await readdir(resolvedDataPath);
     for (const folder of folders) {
-      const folderPath = path.join(dataPath, folder);
+      const folderPath = path.join(resolvedDataPath, folder);
       const folderStat = await stat(folderPath);
       if (folderStat.isDirectory()) {
         console.log(`\n=== Processing unit: ${folder} ===`);
@@ -199,16 +206,16 @@ if (values.all) {
 
     // Generate "all" preset combining all units
     console.log(`\n=== Processing all units combined ===`);
-    let allData = await loadAllUnitsData(dataPath);
+    let allData = await loadAllUnitsData(resolvedDataPath);
     allData = removeDuplicates(allData);
     allData = sortData(allData);
     await writeToFile(allData, "all");
   } catch (error) {
-    console.error(`Error processing data_arsenal folders: ${error}`);
+    console.error(`Error processing data_arsenal folders: ${formatError(error)}`);
     process.exit(1);
   }
 } else if (values.unit) {
-  const dataFolderPath = path.join(dataPath, values.unit);
+  const dataFolderPath = path.join(resolvedDataPath, values.unit);
   let data = await loadAndCombineData(dataFolderPath);
   if (!values["no-check"]) {
     printDuplicates(data);

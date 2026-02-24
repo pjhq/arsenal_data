@@ -21,16 +21,17 @@ bun install
 
 ### Generate Arsenal Files
 
-Combines JSON files from a specified folder into arsenal configuration files:
+Combines JSON files from unit folders under `data_arsenal/` into arsenal configuration files:
 
 ```bash
-bun run arsenal --folder path/to/json/folder
+bun run arsenal --unit 1mercian
 ```
 
 Options:
 
-- `--folder`, `-f`: (Required) Path to folder containing JSON files
 - `--no-check`: Skip duplicate checking
+- `--unit`, `-u`: Unit folder name under `data_arsenal/`
+- `--all`, `-a`: Generate for all units (and an `all` combined preset)
 
 Output files will be created in the `output` directory:
 
@@ -49,8 +50,9 @@ The extracted class names will be output in JSON format.
 
 ## Project Structure
 
-- `generate_arsenal.ts`: Main script for generating arsenal configurations
-- `extract_config.ts`: Utility for extracting class names from config files
+- `scripts/generate_arsenal.ts`: Main script for generating arsenal configurations
+- `scripts/generate_loadouts.ts`: Generates `output/loadouts.sqf` from `data_loadouts/`
+- `scripts/extract_config.ts`: Utility for extracting class names from config files
 
 ## Notes
 
