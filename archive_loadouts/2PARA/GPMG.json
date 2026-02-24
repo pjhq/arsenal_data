@@ -1,46 +1,132 @@
 [
   [
-    ["UK3CB_BAF_L7A2", "", "", "", ["UK3CB_BAF_762_100Rnd_T", 100], [], ""],
+    [
+      "UK3CB_BAF_L7A2",
+      "",
+      "",
+      "",
+      [
+        "UK3CB_BAF_762_100Rnd_T",
+        100
+      ],
+      [],
+      ""
+    ],
     [],
     [],
     [
       "U_SCOTT_ARMY_G4RS_uniform",
       [
-        ["ItemAndroid", 1],
-        ["ItemcTabHCam", 1],
-        ["ACE_IR_Strobe_Item", 1],
-        ["ACE_NVG_Gen4_Black", 1],
-        ["ACE_EHP", 2]
+        [
+          "ItemAndroid",
+          1
+        ],
+        [
+          "ItemcTabHCam",
+          1
+        ],
+        [
+          "ACE_IR_Strobe_Item",
+          1
+        ],
+        [
+          "ACE_NVG_Gen4_Black",
+          1
+        ],
+        [
+          "ACE_EHP",
+          2
+        ]
       ]
     ],
     [
       "2PARA_STV_GPMG",
       [
-        ["kat_IV_16", 2],
-        ["ACE_elasticBandage", 8],
-        ["ACE_packingBandage", 12],
-        ["ACE_bloodIV_500", 2],
-        ["kat_chestSeal", 3],
-        ["kat_EACA", 1],
-        ["ACE_epinephrine", 1],
-        ["kat_IO_FAST", 1],
-        ["kat_larynx", 3],
-        ["kat_TXA", 1],
-        ["ACE_tourniquet", 3],
-        ["ACE_splint", 3],
-        ["ACE_EntrenchingTool", 1],
-        ["UK3CB_BAF_762_100Rnd_T", 6, 100],
-        ["kat_Painkiller", 2, 4]
+        [
+          "kat_IV_16",
+          2
+        ],
+        [
+          "ACE_elasticBandage",
+          8
+        ],
+        [
+          "ACE_packingBandage",
+          12
+        ],
+        [
+          "ACE_bloodIV_500",
+          2
+        ],
+        [
+          "kat_chestSeal",
+          3
+        ],
+        [
+          "kat_EACA",
+          1
+        ],
+        [
+          "ACE_epinephrine",
+          1
+        ],
+        [
+          "kat_IO_FAST",
+          1
+        ],
+        [
+          "kat_larynx",
+          3
+        ],
+        [
+          "kat_TXA",
+          1
+        ],
+        [
+          "ACE_tourniquet",
+          3
+        ],
+        [
+          "ACE_splint",
+          3
+        ],
+        [
+          "ACE_EntrenchingTool",
+          1
+        ],
+        [
+          "UK3CB_BAF_762_100Rnd_T",
+          6,
+          100
+        ],
+        [
+          "kat_Painkiller",
+          2,
+          4
+        ]
       ]
     ],
     [],
     "2PARA_Cobra_D",
     "",
     [],
-    ["ItemMap", "", "TFAR_anprc152", "ItemCompass", "ACE_Altimeter", ""]
+    [
+      "ItemMap",
+      "",
+      "TFAR_anprc152",
+      "ItemCompass",
+      "ACE_Altimeter",
+      ""
+    ]
   ],
   [
-    ["aceax_textureOptions", []],
-    ["ace_earplugs", true]
+    [
+      "aceax_textureOptions",
+      []
+    ],
+    [
+      "ace_earplugs",
+      true
+    ]
   ]
 ]

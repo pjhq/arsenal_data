@@ -1,50 +1,150 @@
 [
   [
-    ["UK3CB_BAF_L85A3", "", "UK3CB_BAF_LLM_IR_Black", "RKSL_optic_LDS", ["rhs_mag_30Rnd_556x45_Mk318_Stanag", 30], [], "UK3CB_underbarrel_acc_afg_t"],
+    [
+      "UK3CB_BAF_L85A3",
+      "",
+      "UK3CB_BAF_LLM_IR_Black",
+      "RKSL_optic_LDS",
+      [
+        "rhs_mag_30Rnd_556x45_Mk318_Stanag",
+        30
+      ],
+      [],
+      "UK3CB_underbarrel_acc_afg_t"
+    ],
     [],
     [],
     [
       "U_SCOTT_ARMY_G4RS_uniform",
       [
-        ["ItemAndroid", 1],
-        ["ItemcTabHCam", 1],
-        ["ACE_IR_Strobe_Item", 1],
-        ["ACE_NVG_Gen4_Black", 1],
-        ["ACE_EHP", 1],
-        ["kat_IV_16", 2],
-        ["ACE_elasticBandage", 8],
-        ["ACE_packingBandage", 12],
-        ["ACE_bloodIV_500", 2],
-        ["kat_chestSeal", 3],
-        ["kat_EACA", 1],
-        ["ACE_epinephrine", 1],
-        ["kat_IO_FAST", 1],
-        ["kat_larynx", 3],
-        ["ACE_splint", 3],
-        ["ACE_tourniquet", 3],
-        ["kat_TXA", 1],
-        ["kat_Painkiller", 2, 4]
+        [
+          "ItemAndroid",
+          1
+        ],
+        [
+          "ItemcTabHCam",
+          1
+        ],
+        [
+          "ACE_IR_Strobe_Item",
+          1
+        ],
+        [
+          "ACE_NVG_Gen4_Black",
+          1
+        ],
+        [
+          "ACE_EHP",
+          1
+        ],
+        [
+          "kat_IV_16",
+          2
+        ],
+        [
+          "ACE_elasticBandage",
+          8
+        ],
+        [
+          "ACE_packingBandage",
+          12
+        ],
+        [
+          "ACE_bloodIV_500",
+          2
+        ],
+        [
+          "kat_chestSeal",
+          3
+        ],
+        [
+          "kat_EACA",
+          1
+        ],
+        [
+          "ACE_epinephrine",
+          1
+        ],
+        [
+          "kat_IO_FAST",
+          1
+        ],
+        [
+          "kat_larynx",
+          3
+        ],
+        [
+          "ACE_splint",
+          3
+        ],
+        [
+          "ACE_tourniquet",
+          3
+        ],
+        [
+          "kat_TXA",
+          1
+        ],
+        [
+          "kat_Painkiller",
+          2,
+          4
+        ]
       ]
     ],
     [
       "2PARA_STV_TRP",
       [
-        ["ACE_EntrenchingTool", 1],
-        ["UK3CB_BAF_Bayonet_L3A1", 1],
-        ["ACE_EHP", 1],
-        ["rhs_mag_30Rnd_556x45_Mk318_Stanag", 12, 30],
-        ["UK3CB_BAF_SmokeShell", 4, 1],
-        ["rhs_mag_m67", 4, 1]
+        [
+          "ACE_EntrenchingTool",
+          1
+        ],
+        [
+          "UK3CB_BAF_Bayonet_L3A1",
+          1
+        ],
+        [
+          "ACE_EHP",
+          1
+        ],
+        [
+          "rhs_mag_30Rnd_556x45_Mk318_Stanag",
+          12,
+          30
+        ],
+        [
+          "UK3CB_BAF_SmokeShell",
+          4,
+          1
+        ],
+        [
+          "rhs_mag_m67",
+          4,
+          1
+        ]
       ]
     ],
     [],
     "2PARA_Cobra_D",
     "",
     [],
-    ["ItemMap", "", "TFAR_anprc152", "ItemCompass", "ACE_Altimeter", ""]
+    [
+      "ItemMap",
+      "",
+      "TFAR_anprc152",
+      "ItemCompass",
+      "ACE_Altimeter",
+      ""
+    ]
   ],
   [
-    ["aceax_textureOptions", []],
-    ["ace_earplugs", true]
+    [
+      "aceax_textureOptions",
+      []
+    ],
+    [
+      "ace_earplugs",
+      true
+    ]
   ]
 ]
