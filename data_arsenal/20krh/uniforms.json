@@ -1,5 +1,11 @@
 [
-  "UK3CB_BAF_U_CombatUniform_MTP",
-  "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve",
-  "UK3CB_BAF_U_RolledUniform_MTP"
+  "TRF_PCS_FS_12AB_KRH_G",
+  "TRF_PCS_FS_12AB_KRH_NG",
+  "TRF_PCS_HS_12AB_KRH_G",
+  "TRF_PCS_HS_12AB_KRH_NG",
+  "TRF_PCS_RS_12AB_KRH_G",
+  "TRF_PCS_RS_12AB_KRH_NG",
+  "TRF_PCU_12AB_KRH_G",
+  "TRF_PCU_12AB_KRH_NG",
+  "TRF_STV_Crew"
 ]
