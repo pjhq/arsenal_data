@@ -1,5 +1,5 @@
 {
-  "typescript.experimental.useTsgo": true,
+  "js/ts.experimental.useTsgo": true,
   "editor.defaultFormatter": "oxc.oxc-vscode",
   "oxc.enable": true,
   "oxc.typeAware": true,

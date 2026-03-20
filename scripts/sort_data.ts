@@ -76,7 +76,7 @@ async function processJsonFile(filePath: string): Promise<{ changed: boolean } |
     }
 
     const uniqueSorted = sortAlphabetically(Array.from(new Set(asStrings)));
-    const nextText = JSON.stringify(uniqueSorted, null, 2) + "\n";
+    const nextText = JSON.stringify(uniqueSorted, null, 2);
 
     if (nextText === originalText) {
       return { changed: false };
