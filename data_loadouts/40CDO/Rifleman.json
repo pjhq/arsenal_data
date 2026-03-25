@@ -2,15 +2,15 @@
   [
     [
       "SCM_L403A1_CTR_Tan",
-      "",
+      "SCM_PRT",
       "UK3CB_BAF_LLM_Flashlight_Tan",
       "SCM_Eleanor",
       [
-        "UK3CB_BAF_556_30Rnd",
+        "Scotts_EMAG_M855A1",
         30
       ],
       [],
-      "rhsusf_acc_rvg_de"
+      "rhsusf_acc_grip3_tan"
     ],
     [],
     [
@@ -29,11 +29,15 @@
       "SCM_G4_T_uniform",
       [
         [
-          "ACE_splint",
-          5
+          "ACE_IR_Strobe_Item",
+          3
         ],
         [
-          "ACE_MapTools",
+          "ACE_EarPlugs",
+          2
+        ],
+        [
+          "ItemcTabHCam",
           1
         ],
         [
@@ -41,37 +45,12 @@
           1
         ],
         [
-          "ItemcTabHCam",
+          "ACE_MapTools",
           1
         ],
         [
-          "ACE_IR_Strobe_Item",
-          1
-        ],
-        [
-          "kat_guedel",
+          "ACE_CableTie",
           3
-        ],
-        [
-          "ACE_elasticBandage",
-          10
-        ],
-        [
-          "ACE_tourniquet",
-          4
-        ],
-        [
-          "ACE_packingBandage",
-          10
-        ],
-        [
-          "kat_chestSeal",
-          2
-        ],
-        [
-          "kat_Painkiller",
-          1,
-          4
         ]
       ]
     ],
@@ -79,40 +58,68 @@
       "SCM_Virtus_Assaulter_1_Belt",
       [
         [
-          "ACE_M84",
+          "UK3CB_BAF_9_17Rnd",
           1,
-          1
+          17
         ],
         [
-          "Scotts_EMAG_Magpul_M855A1_Tracer",
-          10,
+          "Scotts_EMAG_M855A1",
+          11,
           30
         ],
         [
-          "UK3CB_BAF_SmokeShell",
-          2,
-          1
-        ],
-        [
           "HandGrenade",
-          2,
+          4,
           1
         ],
         [
-          "UK3CB_BAF_SmokeShellBlue",
-          1,
+          "ACE_M84",
+          4,
           1
         ],
         [
-          "UK3CB_BAF_SmokeShellRed",
-          1,
+          "UK3CB_BAF_SmokeShell",
+          4,
           1
         ]
       ]
     ],
-    [],
-    "SCM_Fast_V2_C1BP2H3RL2PB1",
-    "",
+    [
+      "SCM_Trizip",
+      [
+        [
+          "ACE_EntrenchingTool",
+          1
+        ],
+        [
+          "ACE_tourniquet",
+          4
+        ],
+        [
+          "UK3CB_BAF_H_Beret_RM_Bootneck",
+          1
+        ],
+        [
+          "ACM_PressureBandage",
+          10
+        ],
+        [
+          "ACM_SAMSplint",
+          2
+        ],
+        [
+          "ACM_ChestSeal",
+          4
+        ],
+        [
+          "ACM_Paracetamol",
+          1,
+          10
+        ]
+      ]
+    ],
+    "SCM_Fast_V2",
+    "SCM_arcteryx",
     [
       "ACE_Vector",
       "",
@@ -127,7 +134,7 @@
       "ItemAndroid",
       "TFAR_anprc152",
       "ItemCompass",
-      "KAT_STS",
+      "ACE_Altimeter",
       "SCM_PVS31_W_WP"
     ]
   ],
@@ -135,6 +142,10 @@
     [
       "aceax_textureOptions",
       []
+    ],
+    [
+      "ace_earplugs",
+      true
     ]
   ]
 ]
