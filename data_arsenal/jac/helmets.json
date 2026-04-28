@@ -1,5 +1,11 @@
 [
+  "EF_H_Protecta",
   "H_CrewHelmetHeli_B",
+  "H_EarProtectors_black_F",
+  "H_EarProtectors_orange_F",
+  "H_EarProtectors_red_F",
+  "H_EarProtectors_white_F",
+  "H_EarProtectors_yellow_F",
   "H_PilotHelmetHeli_B",
   "rhsusf_hgu56p",
   "rhsusf_hgu56p_black",
@@ -18,5 +24,6 @@
   "UK3CB_BAF_H_BERET_AAC",
   "UK3CB_BAF_H_BERET_AAC_OVER",
   "UK3CB_BAF_H_BERET_AAC_PRR",
+  "UK3CB_BAF_H_Earphone",
   "UK3CB_BAF_H_PilotHelmetHeli_A"
 ]
