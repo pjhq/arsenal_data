@@ -1,4 +1,4 @@
-"Type: 2para | Last Updated: 2026-08-29";
+"Type: 2para | Last Updated: 2026-09-27";
 params ["_Arsenal"];
 [_Arsenal, false] call ace_dragging_fnc_setDraggable;
 [_Arsenal, false] call ace_dragging_fnc_setCarryable;

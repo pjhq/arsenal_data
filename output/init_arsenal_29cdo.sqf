@@ -1,4 +1,4 @@
-"Type: 29cdo | Last Updated: 2026-09-06";
+"Type: 29cdo | Last Updated: 2026-09-27";
 [this, false] call ace_dragging_fnc_setDraggable;
 [this, false] call ace_dragging_fnc_setCarryable;
 [this, -1] call ace_cargo_fnc_setSize;

@@ -1,4 +1,4 @@
-"Type: 40cdo | Last Updated: 2026-09-10";
+"Type: 40cdo | Last Updated: 2026-09-27";
 params ["_Arsenal"];
 [_Arsenal, false] call ace_dragging_fnc_setDraggable;
 [_Arsenal, false] call ace_dragging_fnc_setCarryable;
