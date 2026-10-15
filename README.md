@@ -42,7 +42,8 @@ Options:
 Output files will be created in the `output` directory:
 
 - `init_arsenal_[foldername].sqf`: For direct initialization
-- `arsenal_[foldername].sqf`: For execution with parameters
+- `fn_arsenal[Unit].sqf`: For execution with parameters (for example, `fn_arsenal29Cdo.sqf`)
+- `fn_arsenalLoadouts.sqf`: Generated loadouts
 
 ### Extract Class Names
 
@@ -67,7 +68,7 @@ The migration validates all source files and destination names before writing, t
 ## Project Structure
 
 - `scripts/generate_arsenal.ts`: Main script for generating arsenal configurations
-- `scripts/generate_loadouts.ts`: Generates `output/loadouts.sqf` from `data_loadouts/`
+- `scripts/generate_loadouts.ts`: Generates `output/fn_arsenalLoadouts.sqf` from `data_loadouts/`
 - `scripts/extract_config.ts`: Utility for extracting class names from config files
 
 ## Notes

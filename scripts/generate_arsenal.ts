@@ -4,6 +4,14 @@ import { parseArgs } from "node:util";
 import { isClassnameDataFile, parseClassnameData } from "./classname_data.ts";
 
 const repoRoot = path.resolve(import.meta.dir, "..");
+const functionNames: Record<string, string> = {
+  "29cdo": "29Cdo",
+  "2para": "2Para",
+  "40cdo": "40Cdo",
+  "47cdo": "47Cdo",
+  all: "All",
+  jac: "JAC"
+};
 
 function formatError(error: unknown): string {
   return error instanceof Error ? error.message : String(error);
@@ -98,7 +106,7 @@ async function writeToFile(data: string[], prefix: string): Promise<void> {
 
   // const jsonFile = join(distFolder, fileName + ".json");
   const sqfFileInit = path.join(distFolder, `init_${fileName}.sqf`);
-  const sqfFileExec = path.join(distFolder, `${fileName}.sqf`);
+  const sqfFileExec = path.join(distFolder, `fn_arsenal${functionNames[prefix] ?? prefix}.sqf`);
   const jsonContent = JSON.stringify(data);
 
   const sqfContentInit = `"Type: ${prefix} | Last Updated: ${formattedDate}";

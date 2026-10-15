@@ -20,7 +20,7 @@ async function getAllUnitLoadoutFiles(baseDir: string): Promise<{ unit: string; 
 
 const repoRoot = path.resolve(import.meta.dir, "..");
 const baseDir = path.join(repoRoot, "data_loadouts");
-const outputFile = path.join(repoRoot, "output", "loadouts.sqf");
+const outputFile = path.join(repoRoot, "output", "fn_arsenalLoadouts.sqf");
 const currentDate = new Date().toISOString().split("T")[0];
 const outputLines: string[] = [];
 outputLines.push(`"Last Updated: ${currentDate}";`);
