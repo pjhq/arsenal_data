@@ -1,5 +1,6 @@
 import { mkdir, readdir, stat } from "node:fs/promises";
 import * as path from "node:path";
+import { writeGeneratedFile } from "./write_generated_file.ts";
 
 async function getAllUnitLoadoutFiles(baseDir: string): Promise<{ unit: string; loadout: string; file: string }[]> {
   const result: { unit: string; loadout: string; file: string }[] = [];
@@ -45,9 +46,9 @@ try {
     outputLines.push(`["${name}", ${JSON.stringify(loadoutArray)}, true] call ace_arsenal_fnc_addDefaultLoadout;`);
   }
   await mkdir(path.dirname(outputFile), { recursive: true });
-  await Bun.write(outputFile, outputLines.join("\n") + "\n");
+  const written = await writeGeneratedFile(outputFile, outputLines.join("\n") + "\n");
   // Subtract 1 for the comment line
-  console.log(`Wrote ${outputLines.length - 1} loadouts to ${outputFile}`);
+  console.log(written ? `Wrote ${outputLines.length - 1} loadouts to ${outputFile}` : `Unchanged, skipped: ${outputFile}`);
 } catch (err) {
   console.error("Error generating loadouts:", err);
   process.exit(1);

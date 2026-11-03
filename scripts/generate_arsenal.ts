@@ -2,6 +2,7 @@ import { mkdir, readdir } from "node:fs/promises";
 import * as path from "node:path";
 import { parseArgs } from "node:util";
 import { isClassnameDataFile, parseClassnameData } from "./classname_data.ts";
+import { writeGeneratedFile } from "./write_generated_file.ts";
 
 const repoRoot = path.resolve(import.meta.dir, "..");
 const functionNames: Record<string, string> = {
@@ -134,11 +135,13 @@ _Arsenal enableVehicleCargo false;
     // await fs.writeFile(jsonFile, jsonContent, { encoding: "utf8" });
     // console.log(`Data written to file: ${jsonFile}`);
 
-    await Bun.write(sqfFileInit, sqfContentInit);
-    console.log(`Data written to file: ${sqfFileInit}`);
-
-    await Bun.write(sqfFileExec, sqfContentExec);
-    console.log(`Data written to file: ${sqfFileExec}`);
+    for (const [filePath, content] of [
+      [sqfFileInit, sqfContentInit],
+      [sqfFileExec, sqfContentExec]
+    ]) {
+      const written = await writeGeneratedFile(filePath, content);
+      console.log(`${written ? "Data written to file" : "Unchanged, skipped"}: ${filePath}`);
+    }
     console.log("\n");
   } catch (error) {
     console.error(`Error writing to file: ${formatError(error)}`);
