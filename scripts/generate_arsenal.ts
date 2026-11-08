@@ -126,6 +126,7 @@ params ["_Arsenal"];
 [_Arsenal, false] call ace_dragging_fnc_setCarryable;
 [_Arsenal, -1] call ace_cargo_fnc_setSize;
 _Arsenal enableVehicleCargo false;
+[_Arsenal] call PJHQ_fnc_setupUavTerminal;
 [_Arsenal,
   ${jsonContent}
 ] call ace_arsenal_fnc_initBox;`;
